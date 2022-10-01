@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+
+[[mods]]
+modId="blockmind_home_commands"
+version="1.0.0"
+displayName="BlockMind - Home Commands"
+credits="Created using mod maker MCreator -"
+displayURL="https://mcreator.net"
+authors="Entropy"
+
+[[dependencies.blockmind_home_commands]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
