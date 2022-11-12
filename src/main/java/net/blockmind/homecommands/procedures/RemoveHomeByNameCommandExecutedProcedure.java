@@ -2,7 +2,7 @@ package net.blockmind.homecommands.procedures;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 
 import net.blockmind.homecommands.network.BlockmindHomeCommandsModVariables;
@@ -32,7 +32,7 @@ public class RemoveHomeByNameCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 1 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 1 removed."), (false));
 		} else if ((StringArgumentType.getString(arguments, "HomeName"))
 				.equals((entity.getCapability(BlockmindHomeCommandsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new BlockmindHomeCommandsModVariables.PlayerVariables())).Home2Name)) {
@@ -51,7 +51,7 @@ public class RemoveHomeByNameCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 2 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 2 removed."), (false));
 		} else if ((StringArgumentType.getString(arguments, "HomeName"))
 				.equals((entity.getCapability(BlockmindHomeCommandsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new BlockmindHomeCommandsModVariables.PlayerVariables())).Home3Name)) {
@@ -70,7 +70,7 @@ public class RemoveHomeByNameCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 3 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 3 removed."), (false));
 		} else if ((StringArgumentType.getString(arguments, "HomeName"))
 				.equals((entity.getCapability(BlockmindHomeCommandsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new BlockmindHomeCommandsModVariables.PlayerVariables())).Home4)) {
@@ -89,7 +89,7 @@ public class RemoveHomeByNameCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 4 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 4 removed."), (false));
 		} else if ((StringArgumentType.getString(arguments, "HomeName"))
 				.equals((entity.getCapability(BlockmindHomeCommandsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new BlockmindHomeCommandsModVariables.PlayerVariables())).Home5Name)) {
@@ -108,7 +108,7 @@ public class RemoveHomeByNameCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 5 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 5 removed."), (false));
 		}
 	}
 }

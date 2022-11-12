@@ -2,7 +2,7 @@ package net.blockmind.homecommands.procedures;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 
 import net.blockmind.homecommands.network.BlockmindHomeCommandsModVariables;
@@ -30,7 +30,7 @@ public class RemoveHomeByNumberCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 1 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 1 removed."), (false));
 		} else if (DoubleArgumentType.getDouble(arguments, "HomeSlot") == 2) {
 			{
 				String _setval = "";
@@ -47,7 +47,7 @@ public class RemoveHomeByNumberCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 2 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 2 removed."), (false));
 		} else if (DoubleArgumentType.getDouble(arguments, "HomeSlot") == 3) {
 			{
 				String _setval = "";
@@ -64,7 +64,7 @@ public class RemoveHomeByNumberCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 3 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 3 removed."), (false));
 		} else if (DoubleArgumentType.getDouble(arguments, "HomeSlot") == 4) {
 			{
 				String _setval = "";
@@ -81,7 +81,7 @@ public class RemoveHomeByNumberCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 4 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 4 removed."), (false));
 		} else if (DoubleArgumentType.getDouble(arguments, "HomeSlot") == 5) {
 			{
 				String _setval = "";
@@ -98,7 +98,7 @@ public class RemoveHomeByNumberCommandExecutedProcedure {
 				});
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Home in slot 5 removed."), (false));
+				_player.displayClientMessage(Component.literal("Home in slot 5 removed."), (false));
 		}
 	}
 }
